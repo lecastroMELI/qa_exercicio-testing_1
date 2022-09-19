@@ -1,4 +1,4 @@
-const assert = require('assert');
+/* const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
 
 let messagePart1 = '';
@@ -17,4 +17,4 @@ When('I add {string}', function (complementMessage) {
 Then('I end up with {string}', function (expectedResponse) {
   // assert.equal(this.finalMessage, expectedResponse);
   assert.equal(finalMessage, expectedResponse);
-});
+}); */
