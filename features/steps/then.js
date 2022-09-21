@@ -1,6 +1,9 @@
 const {Then} = require('@cucumber/cucumber');
 const assert = require('assert');
 
+const statusCodes = require('../../lib/helpers/statusCodes');
+
+// EXERCÍCIO 1
 const finalMessage = 'Olá mundo';
 
 Then('I end up with {string}', function (expectedResponse) {
@@ -8,10 +11,6 @@ Then('I end up with {string}', function (expectedResponse) {
 });
 
 // EXERCÍCIO 2
-const statusCodes = {
-    ok: 200
-}
-
 Then ('The response was {string}', function(statusCod) {
     // console.log(this.data[0]);
     // forEachResponse(this, (response) => {
