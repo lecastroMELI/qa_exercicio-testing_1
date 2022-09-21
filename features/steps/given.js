@@ -1,5 +1,13 @@
 const {Given} = require('@cucumber/cucumber');
 
-Given('I start with {string}', function (initialMessage) {
+// EXERCÍCIO 1
+Given('I start with {string}', function(initialMessage) {
     console.log(initialMessage);
+});
+
+// EXERCÍCIO 2
+Given ('I have the code of an item: {string}', function(itemCode) {
+    // TODO: repassar código do item para o when
+    this.itemCode = itemCode;
+    // console.log(this);
 });
