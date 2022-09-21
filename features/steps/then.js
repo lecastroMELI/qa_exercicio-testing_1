@@ -1,4 +1,4 @@
-const {Then} = require('@cucumber/cucumber');
+const { Then } = require('@cucumber/cucumber');
 const assert = require('assert');
 
 const statusCodes = require('../../lib/helpers/statusCodes');
@@ -13,13 +13,14 @@ Then('I end up with {string}', function (expectedResponse) {
 // EXERCÍCIO 2
 Then ('The response was {string}', function(statusCod) {
     // console.log(this.data[0]);
+
     // forEachResponse(this, (response) => {
     //     assert(response.status, statusCodes[statusCod]);
     // });
 
     const data = this.data;
 
-    data.forEach((response) => {
+    data.forEach(response => {
         assert(response.status, statusCodes[statusCod]);
     });
 });

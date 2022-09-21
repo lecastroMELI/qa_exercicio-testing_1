@@ -1,4 +1,4 @@
-const {Given} = require('@cucumber/cucumber');
+const { Given } = require('@cucumber/cucumber');
 
 // EXERCÍCIO 1
 Given('I start with {string}', function(initialMessage) {
@@ -6,8 +6,7 @@ Given('I start with {string}', function(initialMessage) {
 });
 
 // EXERCÍCIO 2
-Given ('I have the code of an item: {string}', function(itemCode) {
-    // TODO: repassar código do item para o when
+Given('I have the code of an item: {string}', function(itemCode) {
+    // Repassa o código do item para o when
     this.itemCode = itemCode;
-    // console.log(this);
 });
