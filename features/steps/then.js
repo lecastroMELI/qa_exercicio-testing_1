@@ -11,7 +11,7 @@ Then('I end up with {string}', function (expectedResponse) {
 });
 
 // EXERCÍCIO 2
-Then ('The response was {string}', function(statusCod) {
+Then ('The response status code is: {string}', function(statusCod) {
     // console.log(this.data[0]);
 
     // forEachResponse(this, (response) => {
