@@ -3,26 +3,38 @@ const assert = require('assert');
 
 const statusCodes = require('../../lib/helpers/statusCodes');
 
-// EXERCÍCIO 1
 const finalMessage = 'Olá mundo';
 
 Then('I end up with {string}', function (expectedResponse) {
-    assert.equal(finalMessage, expectedResponse);
+  assert.equal(finalMessage, expectedResponse);
 });
 
-// EXERCÍCIO 2
-Then ('The response status code is: {string}', function(statusCod) {
-    // console.log(this.data[0]);
+Then('The response status code is: {string}', function (statusCod) {
+  // forEachResponse(this, (response) => {
+  //     assert(response.status, statusCodes[statusCod]);
+  // });
 
-    // forEachResponse(this, (response) => {
-    //     assert(response.status, statusCodes[statusCod]);
-    // });
+  const data = this.data;
 
-    const data = this.data;
+  data.forEach((response) => {
+    assert(response.status, statusCodes[statusCod]);
+  });
+});
 
-    data.forEach(response => {
-        assert(response.status, statusCodes[statusCod]);
-    });
+Then('The seller_id is: {int}', function (sellerId) {
+  const data = this.data;
+
+  data.forEach((response) => {
+    assert(response.body.seller_id, sellerId);
+  });
+});
+
+Then('The category_id is: {string}', function (categoryId) {
+  const data = this.data;
+
+  data.forEach((response) => {
+    assert(response.body.category_id, categoryId);
+  });
 });
 
 // function forEachResponse(world, callback) {
