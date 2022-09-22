@@ -10,3 +10,6 @@
 - [ ] 8. Crear un documento explicando el proceso de creación de esta suit.
 - [ ] 9. Demo.
 
+## Referências:
+- [GDoc com todos os exercícios na íntegra](https://docs.google.com/document/d/13fwfPrQqIsNDPv4F6kPlRjjPQymJDT7Narly7dUGC9g/edit)
+- [NPM Comandos Cheat Sheet (init e etc)](https://github.com/tryber/Trybe-CheatSheets/blob/master/backend/nodejs/npm/README.md#cria-script-para-iniciar-a-aplica%C3%A7%C3%A3o-principal)
