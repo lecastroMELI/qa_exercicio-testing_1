@@ -1,22 +1,23 @@
 {
-    "name": "challenge_testing",
-    "version": "1.0.0",
-    "main": "index.js",
-    "keywords": [],
-    "author": "Letícia Castro",
-    "license": "ISC",
-    "description": "",
-    "directories": {
-        "lib": "lib"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "test-cucumber": "npx cucumber-js"
-    },
-    "dependencies": {
-        "@cucumber/cucumber": "^8.5.3",
-        "dotenv": "^16.0.2",
-        "expect": "^29.0.3",
-        "supertest": "^6.2.4"
-    }
+  "name": "challenge_testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Letícia Castro",
+  "license": "ISC",
+  "description": "",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-cucumber": "npx cucumber-js",
+    "test-cucumber-tags": "npx cucumber-js  --tags \"@TEST\""
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^8.5.3",
+    "dotenv": "^16.0.2",
+    "expect": "^29.0.3",
+    "supertest": "^6.2.4"
+  }
 }

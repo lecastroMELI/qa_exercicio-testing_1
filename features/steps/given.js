@@ -7,4 +7,3 @@ Given('I start with {string}', function (initialMessage) {
 Given('I have the code of an item: {string}', function (itemCode) {
   this.itemCode = itemCode;
 });
-
