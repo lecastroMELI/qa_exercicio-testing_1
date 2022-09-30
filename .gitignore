@@ -1,4 +1,9 @@
+/allure-report
+/allure-results
 /node_modules
+
 .vs_code
 .env
 .DS_Store
+
+dummy.txt
