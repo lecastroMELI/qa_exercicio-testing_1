@@ -10,9 +10,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test-cucumber": "npx cucumber-js",
-    "test-cucumber-tags": "npx cucumber-js  --tags \"@TEST\""
+    "cucumber": "npx cucumber-js",
+    "cucumber-tags": "npx cucumber-js  --tags \"@TEST\""
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.5.3",
