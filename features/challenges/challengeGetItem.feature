@@ -6,7 +6,6 @@ Feature: GET item in 'MLA' for test
     When I send a request
     Then The response status code is: "OK"
 
-  @TEST
   Scenario: GET to items_api and validate specific parameters
     Given I have the code of an item: "MLA1137266571"
     When I send a request
@@ -22,7 +21,9 @@ Feature: GET item in 'MLA' for test
   #   Then The response status code is: "OK"
   #   * The category is: "MLA3529"
 
+  @TEST
   Scenario: POST to items_api
     Given I have a sample POST body
     When I send a request to Items with the sample body
     Then The response status code is: "OK"
+    * The pack_id is: 592
