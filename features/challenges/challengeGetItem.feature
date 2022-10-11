@@ -15,11 +15,11 @@ Feature: GET item in 'MLA' for test
 
   @TEST
   Scenario: GET to sites_api with specific characteristics
-    Given One item with the following attributes:
+    Given I have the following attributes:
       | minPrice | maxPrice | listing_type | picking_type | condition | free_shipping | quantity | currency | category |
       |     5500 |     7000 | paid         | <logistic>   | new       | true          |        1 | ARS      | MLA3529  |
-    * I generate a data table
-    When I send a request to Items
+    # * I generate a data table
+    When I send a request to Sites
     Then The response status code is: "OK"
     * The result is: 2
     # * The category is: "MLA3529"
