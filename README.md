@@ -4,9 +4,9 @@
     - [x] En el primero realizar un “hola mundo”.
     - [x] En el segundo .feature se debe realizar un test que realice una request del tipo GET.
 - [x] 4. En el último test (Get a items), agregar validaciones de distintos parámetros del body recibido.
-- [ ] 5. Agregar Allure al proyecto para poder generar reportes de los test ejecutados.
-- [ ] 6. Utilizando tablas realizar un test que filtre por los siguientes y traiga un ítem determinado.
-- [ ] 7. Hacer un Post contra pricing y validar que responde un 200 y algunos parámetros de su body.
+- [x] 5. Agregar Allure al proyecto para poder generar reportes de los test ejecutados.
+- [x] 6. Utilizando tablas realizar un test que filtre por los siguientes y traiga un ítem determinado.
+- [x] 7. Hacer un Post contra pricing y validar que responde un 200 y algunos parámetros de su body.
 - [ ] 8. Crear un documento explicando el proceso de creación de esta suit.
 - [ ] 9. Demo.
 
