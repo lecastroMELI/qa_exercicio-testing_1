@@ -53,3 +53,16 @@ Then('The pack_id is: {int}', function (pack_id) {
     assert.equal(response.body.packs[0].pack_id, pack_id);
   });
 });
+
+Then('The result is: {int}', function (quantity) {
+  const { data, table } = this;
+  const category = table[0].category;
+
+  data.forEach((response) => {
+    // console.log(response.body.results);
+
+    assert.equal(response.body.results.length, quantity);
+    assert.equal(response.body.results[0].category_id, category);
+    assert.equal(response.body.results[1].category_id, category);
+  });
+});
