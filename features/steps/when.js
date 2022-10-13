@@ -17,7 +17,7 @@ When('I send a request', async function () {
   this.data.push(response);
 });
 
-When('I send a request to Items', async function () {
+When('I send a request to Sites', async function () {
   const { table } = this;
   this.data = [];
 
