@@ -6,7 +6,6 @@ Feature: GET item in 'MLA' for test
     When I send a request
     Then The response status code is: "OK"
 
-  @TEST
   Scenario: GET to items_api and validate specific parameters
     Given I have the code of an item: "MLA1137266571"
     When I send a request

@@ -11,7 +11,8 @@
   },
   "scripts": {
     "cucumber": "npx cucumber-js",
-    "cucumber-tags": "npx cucumber-js  --tags \"@TEST\""
+    "cucumber-tags": "npx cucumber-js  --tags \"@TEST\"",
+    "generate-report": "allure generate allure-results"
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.5.3",
