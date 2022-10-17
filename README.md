@@ -18,7 +18,7 @@ Se propone como principal **objetivo** afianzar conocimientos técnicos de herra
 - [x] 9. Demo.
 
 ## Documentación
-- [Descripción completa de todos los ejercicios de la implementación](https://docs.google.com/document/d/13fwfPrQqIsNDPv4F6kPlRjjPQymJDT7Narly7dUGC9g/edit)
+- [Descripción completa de todos los ejercicios de la implementación](https://docs.google.com/document/d/13fwfPrQqIsNDPv4F6kPlRjjPQymJDT7Narly7dUGC9g/edit?usp=sharing)
 - [Documento - Proceso de creación de la suite](https://docs.google.com/document/d/17AKemhhdMruxPiiPKCGoz1KkudyWtCLyKPDeiDVli4E/edit?usp=sharing)
 - [Demo - Presentación](https://docs.google.com/presentation/d/17Avdh9Qp6EGG7DVldRh9Whqp0zTCEsgNgfOIgx_oNZA/edit?usp=sharing)
 
@@ -32,13 +32,19 @@ Se propone como principal **objetivo** afianzar conocimientos técnicos de herra
   git clone git@github.com:lecastroMELI/qa_exercicio-testing_1.git
 ```
 
-2. Instalar las dependencias:
+2. Renombrar el archivo env.sample 
+
+```bash
+  mv env.sample .env
+```
+
+3. Instalar las dependencias:
 
 ```bash
   npm install
 ```
 
-3. Ejecutar las pruebas:
+4. Ejecutar las pruebas:
 
 ```bash
   npm run cucumber
