@@ -32,19 +32,25 @@ Se propone como principal **objetivo** afianzar conocimientos técnicos de herra
   git clone git@github.com:lecastroMELI/qa_exercicio-testing_1.git
 ```
 
-2. Renombrar el archivo env.sample 
+2. Accesar la carpeta del proyecto 
+
+```bash
+  cd qa_exercicio-testing_1
+```
+
+3. Cambiar el nombre del archivo env.sample 
 
 ```bash
   mv env.sample .env
 ```
 
-3. Instalar las dependencias:
+4. Instalar las dependencias:
 
 ```bash
   npm install
 ```
 
-4. Ejecutar las pruebas:
+5. Ejecutar las pruebas:
 
 ```bash
   npm run cucumber
